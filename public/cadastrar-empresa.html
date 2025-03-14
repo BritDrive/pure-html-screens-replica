@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Empresa | Monitorize CCT</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="dashboard.html" class="logo">
+        <div class="logo-icon"></div>
+        <span>monitorize<span style="color: var(--purple);">.CCT</span></span>
+      </a>
+      <div class="user-section">
+        <span class="email">monitorizeteste@gmail.com</span>
+        <div class="icon">
+          <span>🔔</span>
+          <span class="notification-count">3</span>
+        </div>
+        <div class="icon">
+          <span>⚙️</span>
+        </div>
+        <div class="icon">
+          <span>📊</span>
+        </div>
+        <img src="public/lovable-uploads/94dd555d-8c36-47d8-909e-90dcb201a7b4.png" alt="Avatar" class="avatar">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <div class="tabs">
+        <div class="tab active">Gerenciamento de empresas</div>
+        <div class="tab">Gerenciamento de operações sindicais</div>
+      </div>
+      
+      <div class="form-group">
+        <label for="cnpj">CNPJ</label>
+        <input type="text" id="cnpj" class="form-control" placeholder="CNPJ da empresa (apenas números).">
+      </div>
+      
+      <div class="form-group">
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" class="form-control" placeholder="Nome da empresa.">
+      </div>
+      
+      <div class="form-group">
+        <button class="btn btn-primary">Cadastrar</button>
+      </div>
+      
+      <div class="form-group">
+        <label>Buscar empresa (CNPJ ou nome)</label>
+        <div style="display: flex; gap: 10px;">
+          <input type="text" class="form-control" placeholder="CNPJ ou nome da empresa" style="flex: 1;">
+          <button class="btn btn-primary">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
